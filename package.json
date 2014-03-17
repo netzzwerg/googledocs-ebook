@@ -1,0 +1,25 @@
+{
+  "name": "googledocs-ebook",
+  "version": "0.1.0",
+  "description": "Create an ebook from your Google Docs Document.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/netzzwerg/googledocs-ebook.git"
+  },
+  "keywords": [
+    "google",
+    "docs",
+    "converter",
+    "ebook"
+  ],
+  "author": "Béla Varga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netzzwerg/googledocs-ebook/issues"
+  },
+  "homepage": "https://github.com/netzzwerg/googledocs-ebook"
+}
