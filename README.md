@@ -8,3 +8,6 @@ Create an ebook from your Google Docs document.
 https://github.com/mangini/gdocs2md
 
 2. Generate ebook from Markdown with Metalsmith.
+
+https://github.com/segmentio/metalsmith
+
