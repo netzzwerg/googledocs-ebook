@@ -3,7 +3,8 @@ googledocs-ebook
 
 Create an ebook from your Google Docs document.
 
+1. Convert Google Docs to Markdown. 
 
-1. Export Google Docs to HTML.
-2. Convert HTML to Markdown.
-3. Generate ebook from Markdown with Metalsmith.
+https://github.com/mangini/gdocs2md
+
+2. Generate ebook from Markdown with Metalsmith.
