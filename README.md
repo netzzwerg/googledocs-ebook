@@ -11,3 +11,17 @@ https://github.com/mangini/gdocs2md
 
 https://github.com/segmentio/metalsmith
 
+
+Current Workflow
+
+html 	-> 	markdown 	-> latex 	-> pdf
+									-> mobi
+									-> epub
+
+
+svg 	->  eps			-> pdf
+
+install pandoc
+install latex ( mac: http://www.tug.org/mactex/)
+
+node index.js

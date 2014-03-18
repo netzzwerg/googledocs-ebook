@@ -1,0 +1,134 @@
+<h1 id="an-h1-header">An h1 header</h1>
+<p>Paragraphs are separated by a blank line.</p>
+<p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, <code>monospace</code>. Itemized lists look like:</p>
+<ul>
+<li>this one</li>
+<li>that one</li>
+<li>the other on</li>
+</ul>
+<p>Note that --- not considering the asterisk --- the actual text content starts at 4-columns in.</p>
+<blockquote>
+<p>Block quotes are written like so.</p>
+<p>They can span multiple paragraphs, if you like.</p>
+</blockquote>
+<p>Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex. &quot;it's all in chapters 12--14&quot;). Three dots ... will be converted to an ellipsis.</p>
+<p>Pixel Image</p>
+<div class="figure">
+<img src="images/image.png" alt="placeholder image" /><p class="caption">placeholder image</p>
+</div>
+<p>Vector Image</p>
+<div class="figure">
+<embed src="images/vector.eps" /><p class="caption">placeholder image</p>
+</div>
+<h2 id="an-h2-header">An h2 header</h2>
+<p>Here's a numbered list:</p>
+<ol style="list-style-type: decimal">
+<li>first item</li>
+<li>second item</li>
+<li>third item</li>
+</ol>
+<p>Note again how the actual text starts at 4 columns in (4 characters from the left side). Here's a code sample:</p>
+<pre><code># Let me re-iterate ...
+for i in 1 .. 10 { do-something(i) }</code></pre>
+<p>As you probably guessed, indented 4 spaces. By the way, instead of indenting the block, you can use delimited blocks, if you like:</p>
+<pre><code>define foobar() {
+    print &quot;Welcome to flavor country!&quot;;
+}</code></pre>
+<p>(which makes copying &amp; pasting easier). You can optionally mark the delimited block for Pandoc to syntax highlight it:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> time
+<span class="co"># Quick, count to ten!</span>
+<span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">10</span>):
+    <span class="co"># (but not *too* quick)</span>
+    time.sleep(<span class="fl">0.5</span>)
+    <span class="dt">print</span> i</code></pre>
+<table class="sourceCode javascript numberLines" id="mycode" startFrom="100"><tr class="sourceCode"><td class="lineNumbers"><pre>100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+</pre></td><td class="sourceCode"><pre><code class="sourceCode javascript">(<span class="kw">function</span>() {
+  <span class="st">&quot;use strict&quot;</span>;
+
+  <span class="kw">var</span> is_strict = (<span class="kw">function</span>() {
+    <span class="kw">return</span> !<span class="kw">this</span>;
+  }());
+
+  <span class="ot">console</span>.<span class="fu">info</span>(strict);
+
+})();</code></pre></td></tr></table>
+<h3 id="an-h3-header">An h3 header</h3>
+<p>Now a nested list:</p>
+<ol style="list-style-type: decimal">
+<li><p>First, get these ingredients:</p>
+<ul>
+<li>carrots</li>
+<li>celery</li>
+<li>lentils</li>
+</ul></li>
+<li><p>Boil some water.</p></li>
+<li><p>Dump everything in the pot and follow this algorithm:</p>
+<pre><code>find wooden spoon
+uncover pot
+stir
+cover pot
+balance wooden spoon precariously on pot handle
+wait 10 minutes
+goto first step (or shut off burner when done)</code></pre>
+<p>Do not bump wooden spoon or it will fall.</p></li>
+</ol>
+<p>Notice again how text always lines up on 4-space indents (including that last line which continues item 3 above). Here's a link to <a href="http://foo.bar">a website</a>. Here's a link to a <a href="local-doc.html">local doc</a>. Here's a footnote <a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
+<p>Tables can look like this:</p>
+<table>
+<caption>Shoes, their sizes, and what they're made of</caption>
+<thead>
+<tr class="header">
+<th align="left">size</th>
+<th align="left">material</th>
+<th align="left">color</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">9</td>
+<td align="left">leather</td>
+<td align="left">brown</td>
+</tr>
+<tr class="even">
+<td align="left">10</td>
+<td align="left">hemp canvas</td>
+<td align="left">natural</td>
+</tr>
+<tr class="odd">
+<td align="left">11</td>
+<td align="left">glass</td>
+<td align="left">transparent</td>
+</tr>
+</tbody>
+</table>
+<p>(The above is the caption for the table.) Here's a definition list:</p>
+<dl>
+<dt>apples</dt>
+<dd>Good for making applesauce.
+</dd>
+<dt>oranges</dt>
+<dd>Citrus!
+</dd>
+<dt>tomatoes</dt>
+<dd>There's no &quot;e&quot; in tomatoe.
+</dd>
+</dl>
+<p>Again, text is indented 4 spaces. (Alternately, put blank lines in between each of the above definition list lines to spread things out more.)</p>
+<p>Inline math equations go in like so: <span class="math"><em>ω</em> = <em>d</em><em>ϕ</em>/<em>d</em><em>t</em></span>. Display math should get its own line and be put in in double-dollarsigns:</p>
+<p><br /><span class="math"><em>I</em> = ∫<em>ρ</em><em>R</em><sup>2</sup><em>d</em><em>V</em></span><br /></p>
+<p>Done.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Footnote text goes here.<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>

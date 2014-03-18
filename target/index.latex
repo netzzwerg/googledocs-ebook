@@ -1,0 +1,190 @@
+\section{An h1 header}\label{an-h1-header}
+
+Paragraphs are separated by a blank line.
+
+2nd paragraph. \emph{Italic}, \textbf{bold}, \texttt{monospace}.
+Itemized lists look like:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  this one
+\item
+  that one
+\item
+  the other on
+\end{itemize}
+
+Note that --- not considering the asterisk --- the actual text content
+starts at 4-columns in.
+
+\begin{quote}
+Block quotes are written like so.
+
+They can span multiple paragraphs, if you like.
+\end{quote}
+
+Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex. ``it's all in
+chapters 12--14''). Three dots \ldots{} will be converted to an
+ellipsis.
+
+Pixel Image
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{images/image.png}
+\caption{placeholder image}
+\end{figure}
+
+Vector Image
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{images/vector.eps}
+\caption{placeholder image}
+\end{figure}
+
+\subsection{An h2 header}\label{an-h2-header}
+
+Here's a numbered list:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  first item
+\item
+  second item
+\item
+  third item
+\end{enumerate}
+
+Note again how the actual text starts at 4 columns in (4 characters from
+the left side). Here's a code sample:
+
+\begin{verbatim}
+# Let me re-iterate ...
+for i in 1 .. 10 { do-something(i) }
+\end{verbatim}
+
+As you probably guessed, indented 4 spaces. By the way, instead of
+indenting the block, you can use delimited blocks, if you like:
+
+\begin{verbatim}
+define foobar() {
+    print "Welcome to flavor country!";
+}
+\end{verbatim}
+
+(which makes copying \& pasting easier). You can optionally mark the
+delimited block for Pandoc to syntax highlight it:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CharTok{import} \NormalTok{time}
+\CommentTok{# Quick, count to ten!}
+\KeywordTok{for} \NormalTok{i in }\DataTypeTok{range}\NormalTok{(}\DecValTok{10}\NormalTok{):}
+    \CommentTok{# (but not *too* quick)}
+    \NormalTok{time.sleep(}\FloatTok{0.5}\NormalTok{)}
+    \DataTypeTok{print} \NormalTok{i}
+\end{Highlighting}
+\end{Shaded}
+
+\hyperdef{}{mycode}{\label{mycode}}
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,firstnumber=100,]
+\NormalTok{(}\KeywordTok{function}\NormalTok{() \{}
+  \StringTok{"use strict"}\NormalTok{;}
+
+  \KeywordTok{var} \NormalTok{is_strict = (}\KeywordTok{function}\NormalTok{() \{}
+    \KeywordTok{return} \NormalTok{!}\KeywordTok{this}\NormalTok{;}
+  \NormalTok{\}());}
+
+  \OtherTok{console}\NormalTok{.}\FunctionTok{info}\NormalTok{(strict);}
+
+\NormalTok{\})();}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{An h3 header}\label{an-h3-header}
+
+Now a nested list:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  First, get these ingredients:
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    carrots
+  \item
+    celery
+  \item
+    lentils
+  \end{itemize}
+\item
+  Boil some water.
+\item
+  Dump everything in the pot and follow this algorithm:
+
+\begin{verbatim}
+find wooden spoon
+uncover pot
+stir
+cover pot
+balance wooden spoon precariously on pot handle
+wait 10 minutes
+goto first step (or shut off burner when done)
+\end{verbatim}
+
+  Do not bump wooden spoon or it will fall.
+\end{enumerate}
+
+Notice again how text always lines up on 4-space indents (including that
+last line which continues item 3 above). Here's a link to
+\href{http://foo.bar}{a website}. Here's a link to a
+\href{local-doc.html}{local doc}. Here's a footnote \footnote{Footnote
+  text goes here.}.
+
+Tables can look like this:
+
+\begin{longtable}[c]{@{}lll@{}}
+\toprule\addlinespace
+size & material & color
+\\\addlinespace
+\midrule\endhead
+9 & leather & brown
+\\\addlinespace
+10 & hemp canvas & natural
+\\\addlinespace
+11 & glass & transparent
+\\\addlinespace
+\bottomrule
+\addlinespace
+\caption{Shoes, their sizes, and what they're made of}
+\end{longtable}
+
+(The above is the caption for the table.) Here's a definition list:
+
+\begin{description}
+\itemsep1pt\parskip0pt\parsep0pt
+\item[apples]
+Good for making applesauce.
+\item[oranges]
+Citrus!
+\item[tomatoes]
+There's no ``e'' in tomatoe.
+\end{description}
+
+Again, text is indented 4 spaces. (Alternately, put blank lines in
+between each of the above definition list lines to spread things out
+more.)
+
+Inline math equations go in like so: $\omega = d\phi / dt$. Display math
+should get its own line and be put in in double-dollarsigns:
+
+\[I = \int \rho R^{2} dV\]
+
+Done.
